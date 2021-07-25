@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91" height="91" viewBox="0 0 91 91">
+  <defs>
+    <filter id="Ellipse_99" x="0" y="0" width="91" height="91" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_135" data-name="Group 135" transform="translate(8906.534 3555.534)">
+    <g transform="matrix(1, 0, 0, 1, -8906.53, -3555.53)" filter="url(#Ellipse_99)">
+      <circle id="Ellipse_99-2" data-name="Ellipse 99" cx="36.5" cy="36.5" r="36.5" transform="translate(9 6)" fill="#fff"/>
+    </g>
+    <path id="Icon_metro-earth" data-name="Icon metro-earth" d="M33.444,1.928A30.874,30.874,0,1,0,64.318,32.8,30.874,30.874,0,0,0,33.444,1.928Zm0,57.888a26.924,26.924,0,0,1-10.687-2.2L36.816,41.8A1.93,1.93,0,0,0,37.3,40.52V34.731a1.93,1.93,0,0,0-1.93-1.93c-6.813,0-14-7.083-14.072-7.153a1.929,1.929,0,0,0-1.364-.565H12.219a1.93,1.93,0,0,0-1.93,1.93V38.59a1.93,1.93,0,0,0,1.067,1.726l6.652,3.326v11.33A27.031,27.031,0,0,1,9.031,21.224h7.047a1.93,1.93,0,0,0,1.364-.565l7.718-7.718a1.93,1.93,0,0,0,.565-1.364V6.908a27.09,27.09,0,0,1,19.554,1.6c-.25.211-.493.432-.726.665a11.579,11.579,0,0,0,8.179,19.766q.286,0,.574-.014c.833,3.124,2.337,11.255-.507,22.452a1.925,1.925,0,0,0-.051.315,26.93,26.93,0,0,1-19.3,8.12Z" transform="translate(-8894.521 -3545.88)" fill="#b76fff"/>
+  </g>
+</svg>

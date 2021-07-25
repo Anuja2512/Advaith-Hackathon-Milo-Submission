@@ -1,0 +1,28 @@
+.content-feed{
+  width: 100%;
+  margin: 1.5% 3%;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  border-radius: 2rem;
+  padding: 2%;
+}
+.content-header{
+  color: #B76FFF;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 600;
+  margin: 2%;
+}
+@media screen and (max-width: 600px) {
+
+  .content-page{
+    display: table;
+    width: 100%;
+  }
+  .contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2%;
+  }
+}

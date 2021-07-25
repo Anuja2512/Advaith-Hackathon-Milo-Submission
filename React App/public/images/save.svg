@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80">
+  <g id="save" transform="translate(-1643 -239)">
+    <circle id="Ellipse_95" data-name="Ellipse 95" cx="40" cy="40" r="40" transform="translate(1643 239)" fill="#fff"/>
+    <g id="Icon_ionic-ios-save" data-name="Icon ionic-ios-save" transform="translate(1658.906 252.906)">
+      <path id="Path_199" data-name="Path 199" d="M20.137,4.5h-1.8a.9.9,0,0,0-.9.9v8.1c0,.495.855.9,1.35.9h1.35a.9.9,0,0,0,.9-.9V5.4A.9.9,0,0,0,20.137,4.5Z" transform="translate(7.757)" fill="#b76fff"/>
+      <path id="Path_200" data-name="Path 200" d="M46.1,11.934,40.266,6.1a5.442,5.442,0,0,0-3.835-1.6H33.281a1.817,1.817,0,0,0-1.8,1.822v9a1.8,1.8,0,0,1-1.8,1.8H15.3a1.8,1.8,0,0,1-1.8-1.8v-9A1.824,1.824,0,0,0,11.7,4.5H8.1A3.61,3.61,0,0,0,4.5,8.1V44.09a3.61,3.61,0,0,0,3.6,3.6H44.09a3.61,3.61,0,0,0,3.6-3.6V15.747A5.4,5.4,0,0,0,46.1,11.934ZM33.518,42.3a1.914,1.914,0,0,1-2,1.8H13.475a1.914,1.914,0,0,1-2-1.8V31.5a1.914,1.914,0,0,1,2-1.8h18.04a1.914,1.914,0,0,1,2,1.8Z" transform="translate(0 0)" fill="#b76fff"/>
+    </g>
+  </g>
+</svg>

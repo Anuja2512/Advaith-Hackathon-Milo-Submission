@@ -1,0 +1,73 @@
+.bg{
+  height: 100%;
+  min-height: 100vh;
+  background-image: url('https://source.unsplash.com/random/1920x1080');
+  /* background-color: gray; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.profile-navbar{
+  margin: 0 2%;
+  margin-right: 0%;
+}
+.profile-container{
+  margin: 1.5% 3%;
+  background-color: #ffffff;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  border-radius: 2rem;
+  padding: 4% 5% 2%;
+}
+.profile-title{
+  color: #B76FFF;
+  font-size: 1.2em;
+  font-weight: 700;
+}
+.profile-username{
+  font-size: 1.3em;
+}
+.profile-name{
+  color: #696969;
+  font-weight: 700;
+}
+.profile-headline{
+  color: #696969;
+  font-weight: 500;
+}
+.pic-cont{
+  display: inline-block;
+  width: 100%;
+  
+  /* transform: translateY(-40%);  */
+}
+.update-profile{
+  position: absolute;
+  right: 1%;
+  top: 1%;
+}
+.update-profile img{
+  height: 60px;
+}
+@media screen and (max-width: 1000px) {
+  .profile-navbar{
+    display: none;
+  }
+  .profile-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 10%;
+  }
+  .light-cont{
+    display: table;
+    width: 100%;
+    height: 85% !important;
+  }
+}

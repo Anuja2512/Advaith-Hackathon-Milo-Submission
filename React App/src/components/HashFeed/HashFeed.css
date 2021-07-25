@@ -1,0 +1,28 @@
+@media screen and (max-width: 1000px) {
+  .feed-navbar{
+    display: none;
+  }
+  .post-feed{
+    margin: 4% 2% 3% 9%;
+    order:2;
+
+  }
+  .hastags{
+    order:1;
+    
+  }
+}
+@media screen and (max-width: 600px) {
+  .feed-page{
+    display: table;
+    width: 100%;
+  }
+  .post-feed{
+    width: 80%;    
+  }
+  .hashtags{
+    width: 80%;
+    position: relative;
+    left: 5%;
+  }
+}

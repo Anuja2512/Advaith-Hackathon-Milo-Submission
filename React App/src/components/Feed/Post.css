@@ -1,0 +1,81 @@
+.post{
+  background-color: #ffffff;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.7),rgba(255,255,255,0.3));
+  border-radius: 2rem;
+  margin-bottom: 5%;
+  cursor: pointer;
+}
+
+.user-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -5%;
+  width: 70%;
+}
+.name{
+  margin: 0%;
+  margin-top: 2%;
+  font-size: 1.3em;
+  font-weight: 700;
+  color: #B76FFF;
+}
+.username{
+  margin: 0%;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #B76FFF;
+}
+.headline{
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #696969;
+  font-style: italic;
+}
+.prof-pic-container{
+  text-align: center;
+  padding: 2% 4%;
+  width: 20%;
+}
+.post-profile-pic{
+  border-radius: 50% !important;
+    width: 60px;
+  height: 60px;
+}
+.post-container{
+  padding: 1% 4%;
+}
+.post-data{
+  overflow-wrap: break-word;
+  font-size: 1.19em;
+}
+.post-pic-container{
+  overflow: hidden;
+  width: 100%;
+  border-radius: 1.6em;
+  border: 0px solid rgba(49, 49, 49, 0.7);
+  margin-bottom: 5%;
+}
+.post-pic{
+  border-radius: 1.6em;
+  max-width: inherit;
+  transition: 0.5s all ease-in-out;
+
+}
+.post-pic:hover{
+  transform: scale(1.2);
+}
+.post-hashtag{
+  color: #696969;
+  font-size: 1em;
+}
+@media screen and (max-width: 600px) {
+  .prof-pic-container{
+    display: inline-block;
+    margin: 2%;
+    text-align: left;
+  }
+  .user-info{
+    display: inline-block;
+  }
+}

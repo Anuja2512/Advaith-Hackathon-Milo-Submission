@@ -1,0 +1,14 @@
+.content-pic{
+  margin: 0 auto;
+  max-height: 500px;
+  max-width: 400px;
+  min-height: 500px;
+  min-width: 400px;
+}
+@media screen and (max-width: 600px) {
+  .content-pic{
+    max-width: 300px;
+    max-height: 400px;
+    margin-bottom: -40%;
+  }
+}
