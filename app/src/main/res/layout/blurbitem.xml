@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+>
+    <androidx.cardview.widget.CardView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                                       android:layout_alignParentEnd="true" android:layout_alignParentStart="true"
+
+                                       app:cardBackgroundColor="#77FBF9F9" app:cardElevation="0dp"
+                                       app:cardCornerRadius="40dp"
+                                       android:layout_marginBottom="18dp"
+    >
+        <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp">
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:padding="5dp"
+                    android:orientation="horizontal">
+                <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/post_que_user_image"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/eyeicon"
+                        android:layout_marginLeft="4dp"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                    >
+
+
+                        <TextView
+                                android:id="@+id/post_que_user_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="5dp"
+                                android:layout_gravity="center_vertical"
+
+                                android:text="Username"
+                                android:textColor="#B76FFF"
+                                android:textSize="16sp"
+                                android:textStyle="bold"/>
+                        <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=" TIME"
+                                android:textAlignment="textEnd"
+
+                                android:id="@+id/post_time"
+                                android:textSize="13sp"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:layout_marginLeft="5dp"
+                            android:padding="3dp">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hashtags "
+
+                                android:id="@+id/text_que_time_dis"
+                                android:textSize="13dp"/>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+            <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/settings_current_password"
+
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+            />
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="40dp"
+                    android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent"
+                           android:contentDescription="Post image"
+                           android:src="@drawable/eyeicon"
+                           android:adjustViewBounds="true"
+
+
+                           android:scaleType="fitCenter"
+                           android:id="@+id/postimage"
+                           android:layout_height="match_parent"/>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    app:cardElevation="0dp"
+                    android:layout_marginBottom="10dp"
+                    app:cardCornerRadius="40dp"
+                    android:layout_height="wrap_content" android:padding="8dp" android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp">
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_margin="8dp">
+                    <TextView
+                            android:id="@+id/blurb_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_gravity="center_vertical"
+
+                            android:text="Title"
+                            android:textColor="#B76FFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold"/>
+                    <TextView
+                            android:id="@+id/blurb_profession"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:textAlignment="textEnd"
+                            android:text="Profession"
+                            android:textColor="#B76FFF"
+                            android:textSize="16sp"
+                            android:textStyle="bold" tools:ignore="RtlCompat"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

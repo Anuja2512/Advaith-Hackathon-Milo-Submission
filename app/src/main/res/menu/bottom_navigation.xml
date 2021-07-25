@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+            android:id="@+id/bhome"
+
+            android:title=" " android:icon="@drawable/ic_icon_ionic_ios_home"/>
+
+
+    <item
+            android:id="@+id/bevents"
+            android:icon="@drawable/ic_icon_simple_eventbrite"
+            android:title=" "/>
+
+    <item
+            android:id="@+id/bblurb"
+            android:icon="@drawable/ic_icon_material_near_me"
+            android:title=" "
+            />
+</menu>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".HomeFragment">
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                      android:orientation="vertical" app:layout_constraintTop_toTopOf="parent"
+                      app:layout_constraintEnd_toEndOf="parent" android:layout_margin="15dp"
+                      app:layout_constraintStart_toStartOf="parent">
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" android:padding="10dp" app:cardCornerRadius="40dp"
+                        app:cardBackgroundColor="#77FBF9F9" app:cardElevation="0dp">
+                    <LinearLayout
+                            android:orientation="vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent" android:padding="20dp">
+                            <com.google.android.material.textfield.TextInputLayout
+                                    android:layout_width="235dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="5dp" app:boxCornerRadiusBottomEnd="20dp"
+                                    app:boxCornerRadiusBottomStart="20dp" app:boxCornerRadiusTopEnd="20dp"
+                                    app:boxCornerRadiusTopStart="20dp" app:boxStrokeWidthFocused="0dp"
+                                    android:background="@drawable/edit_box_bg"
+                                    app:boxStrokeWidth="0dp" app:boxStrokeColor="@android:color/transparent"
+                                    android:layout_marginTop="10dp" app:hintAnimationEnabled="false"
+                                    app:hintEnabled="false" android:gravity="center_vertical">
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@android:color/transparent"
+                                        android:hint="Title" android:id="@+id/titletext"/>
+                            </com.google.android.material.textfield.TextInputLayout>
+                            <ImageView
+                                    android:src="@drawable/ic_baseline_calendar_today_24"
+                                    android:layout_width="40dp"
+                                    android:layout_height="50dp" android:id="@+id/calendarbutton"
+                                    android:layout_weight="1"
+                                    android:layout_gravity="center" android:padding="8dp"/>
+                        </LinearLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                app:boxStrokeColor="@android:color/transparent"
+                                app:boxCornerRadiusBottomEnd="20dp"
+                                app:boxCornerRadiusBottomStart="20dp" app:boxCornerRadiusTopEnd="20dp"
+                                app:boxCornerRadiusTopStart="20dp"
+                                android:background="@drawable/edit_box_bg"
+                                android:layout_marginLeft="20dp" android:layout_marginRight="20dp"
+                                app:hintTextAppearance="@style/TextAppearance.AppCompat.Body1"
+
+                                app:boxStrokeWidth="0dp"
+                                app:boxStrokeWidthFocused="0dp" app:boxCollapsedPaddingTop="0dp"
+                                app:hintAnimationEnabled="false" app:expandedHintEnabled="false"
+                                app:hintEnabled="false">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:layout_height="80dp"
+                                    android:background="@android:color/transparent"
+                                    android:hint="What's coming up?" android:id="@+id/posttext"
+                                    android:gravity="center"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                                android:layout_width="match_parent"
+                                app:hintAnimationEnabled="false"
+                                app:hintEnabled="false"
+                                android:layout_height="match_parent" android:layout_marginLeft="20dp"
+                                android:layout_marginRight="20dp"
+                                android:layout_marginBottom="5dp" android:visibility="gone"
+                                android:id="@+id/hashtagbox" app:boxStrokeColor="@android:color/transparent"
+                                app:boxStrokeWidth="0dp" app:boxStrokeWidthFocused="0dp"
+                                android:background="@drawable/edit_box_bg"
+                                app:boxCornerRadiusBottomEnd="20dp" app:boxCornerRadiusBottomStart="20dp"
+                                app:boxCornerRadiusTopEnd="20dp" app:boxCornerRadiusTopStart="20dp"
+                                app:boxCollapsedPaddingTop="0dp">
+
+                            <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="match_parent"
+                                    android:hint="Your Hashtags here!"
+                                    android:background="@android:color/transparent"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/hashtagtext" android:text="#milo"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                        <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" tools:src="@tools:sample/avatars"
+                                android:id="@+id/postimage" android:visibility="gone" android:layout_margin="5dp"/>
+                        <TextView
+                                android:text="1 km"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:id="@+id/seekbartext"
+                                android:layout_marginLeft="20dp" android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                                android:orientation="horizontal"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" android:padding="10dp"
+                        >
+                            <androidx.cardview.widget.CardView
+                                    android:layout_width="193dp"
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="30dp"
+                                    android:layout_gravity="center" android:foregroundGravity="center"
+                                    android:layout_marginTop="10dp" android:layout_marginBottom="10dp"
+                                    android:layout_marginLeft="10dp">
+                                <SeekBar
+                                        android:layout_width="170dp"
+                                        android:layout_height="wrap_content" android:id="@+id/seekBar"
+                                        android:max="350"
+                                        android:layout_marginBottom="8dp" android:layout_gravity="center"
+                                        android:layout_marginTop="8dp" android:layout_marginLeft="10dp"
+                                        android:layout_marginRight="10dp"
+                                        android:progressTint="#B76FFF"
+                                        android:thumbTint="#B76FFF"/>
+                            </androidx.cardview.widget.CardView>
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent" android:id="@+id/picturebutton"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_group_13"/>
+                            <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="match_parent" android:id="@+id/postbutton"
+                                    android:layout_weight="1"
+                                    app:srcCompat="@drawable/ic_group_12"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:id="@+id/BlurbRecycler" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
