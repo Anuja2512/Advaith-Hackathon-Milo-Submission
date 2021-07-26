@@ -32,4 +32,7 @@ Milo is a social network with feature-sets for posts, scheduling events, broadca
 1. Install the required libraries, add up the sensitive data and run <code>uvicorn main:app --reload</code> on the terminal.
 2. Use POSTMAN or similar to test the APIs.
 
-
+# Running the Frontend
+1. Install Node.js if you haven't already.
+2. Inside the directory, run <code>npm i</code> and then <code>npm start</code>.
+3. React project shall load on <code>localhost:3000</code>.
