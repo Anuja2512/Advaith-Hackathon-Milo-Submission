@@ -16,11 +16,11 @@ Milo is a social network with feature-sets for posts, scheduling events, broadca
 2. Open the android code which you have just downloaded, via Android Studio IDE.
 3. Once the source code is opened in the Android Studio window, wait until the code is configured and the build is running.
 4. In your mobile phone enable the Developer mode.
+  - #### Steps for enabling the Developer mode:
+    1. Click on the About Phone options in the settings of your mobile phone.
+    2. Next, click on Build Number option for 7 times.
+    3. It will show you a toast message, and your Developer Options will be enabled.
 
-### Steps for enabling the Developer mode:
-1. Click on the About Phone options in the settings of your mobile phone.
-2. Next, click on Build Number option for 7 times.
-3. It will show you a toast message, and your Developer Options will be enabled.
 5. Now, click on the Developer Options in the settings of your mobile phone.
 6. Enable the USB Debugging mode.
 7. Connect your Android mobile phone via USB cable to your Laptop/Desktop.
@@ -32,3 +32,5 @@ Milo is a social network with feature-sets for posts, scheduling events, broadca
 # Running the Backend
 1. Install the required libraries, add up the sensitive data and run <code>uvicorn main:app --reload</code> on the terminal.
 2. Use POSTMAN or similar to test the APIs.
+
+
