@@ -145,7 +145,7 @@ export default function Profile() {
                     <div className="col-6" style={{display:'inline-block',width:'60%'}}>
                     <div style={{ display: "inline-block", margin: "0% 4%" }}>
                     <p className="profile-username profile-title">
-                      {profile.username}
+                      @{profile.username}
                     </p>
                     <p className="profile-name">
                       {profile.fName} {profile.lName}

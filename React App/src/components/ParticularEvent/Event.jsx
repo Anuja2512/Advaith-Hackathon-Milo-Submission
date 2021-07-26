@@ -230,7 +230,7 @@ export default function Event(props) {
             <h3 className="event-title">{data.title}</h3>
             <h6 className="event-desc">{data.description}</h6>
             <h6 className="event-date">{date.getDate()} - {date.getMonth()} - {date.getFullYear()}</h6>
-            {showBigNavbar || window.innerWidth>1000 ? <>{ data.imageLink.length > 0 ? <div className="post-pic-container"><img src={data.imageLink} className="img img-fluid post-pic" alt="postpicture"/></div> : null}</> : <>{ data.imageLink.length > 0 ? <div className="post-pic-container text-center"><img src={data.imageLink} className="img-fluid post-pic" style={{width: "100%"}} alt="postpicture"/></div> : null}</>}
+            {showBigNavbar || window.innerWidth>1000 ? <>{ data.imageLink.length > 0 ? <div className="post-pic-container"><img src={data.imageLink} style={{width:'100%'}}  className="img-fluid post-pic" alt="postpicture"/></div> : null}</> : <>{ data.imageLink.length > 0 ? <div className="post-pic-container text-center"><img src={data.imageLink} className="img-fluid post-pic" style={{width: "100%"}} alt="postpicture"/></div> : null}</>}
         </div>
         {data.user.username===username ? updateAndDelete : null}
             {showUpdateForm ? updateForm : null}

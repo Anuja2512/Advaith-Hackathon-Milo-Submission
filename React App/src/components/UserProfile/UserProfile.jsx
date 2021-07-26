@@ -111,7 +111,7 @@ export default function UserProfile({
 
   return (
     <>
-      {screenReady&&allowedLocation ? (
+      {screenReady && allowedLocation ? (
         <div className="fluid-container g-0 mw-100 bg">
           <div className="row g-0 blur-container">
             {showBigNavbar || window.innerWidth > 1000 ? null : <RespNavbar />}
@@ -127,21 +127,18 @@ export default function UserProfile({
                 }}
                 className="light-bg light-cont"
               >
-                <div className="pic-cont container-fluid">
-                  <div className="row">
-                    <div className="col-3">
-                    <div className="container container-fluid">
-                      { profile.profilePicture.length > 0 ? <img src={profile.profilePicture} className="rounded post-profile-pic float-right" style={{borderRadius: "50%",
-                        width: "100%",
-                        height: "auto",
-                        maxHeight: "170px",
-                        maxWidth: "170px",
-                        minHeight: "50px",
-                        minWidth: "50px",
-                        transform: "translateY(-40%)"}} alt="profilepicture" /> : <img src="/user.png" className="img img-fluid rounded post-profile-pic" alt="profilepicture" /> }
+                <div className=" container-fluid">
+                  <div className="col-lg-12 col-md-12 col-sm-12">
+                    <div style={{width:'fit-content'}} className="pic-cont update-pic-cont">
+                      { profile.profilePicture.length > 0 ? <img 
+                      style={{borderRadius: '50%',
+                      height:'170px',
+                      width:'170px',  transform: 'translateY(-40%)',
+                      display:'inline-block'
+                    }}
+                    src={profile.profilePicture} className=" img-fluid" alt="profilepicture"/> : <img src="/user.png" className="img-fluid" alt="profilepicture" /> }
                   </div>
-                    </div>
-                    <div className="col-9">
+                  <div className="col-6" style={{display:'inline-block',width:'60%'}}>
                     <div style={{ display: "inline-block", margin: "0% 4%" }}>
                     <p className="profile-username profile-title">
                       @{profile.username}
@@ -176,5 +173,5 @@ export default function UserProfile({
         </div>
       )}
     </>
-  );
+  )
 }
