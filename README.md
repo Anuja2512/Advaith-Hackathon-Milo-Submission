@@ -27,3 +27,8 @@ Milo is a social network with feature-sets for posts, scheduling events, broadca
 8. Click on the 'Run' button(Green Triangle Button) in your Android Studio window after detecting your mobile name.
 9. Wait until the application is installed on your android mobile phone.
 10. Once the application has been installed, feel free to use the 'Milo' app on your phone!
+
+
+# Running the Backend
+1. Install the required libraries, add up the sensitive data and run <code>uvicorn main:app --reload</code> on the terminal.
+2. Use POSTMAN or similar to test the APIs.
