@@ -20,13 +20,12 @@ Milo is a social network with feature-sets for posts, scheduling events, broadca
     1. Click on the About Phone options in the settings of your mobile phone.
     2. Next, click on Build Number option for 7 times.
     3. It will show you a toast message, and your Developer Options will be enabled.
-
-5. Now, click on the Developer Options in the settings of your mobile phone.
-6. Enable the USB Debugging mode.
-7. Connect your Android mobile phone via USB cable to your Laptop/Desktop.
-8. Click on the 'Run' button(Green Triangle Button) in your Android Studio window after detecting your mobile name.
-9. Wait until the application is installed on your android mobile phone.
-10. Once the application has been installed, feel free to use the 'Milo' app on your phone!
+    4. Now, click on the Developer Options in the settings of your mobile phone.
+    5. Enable the USB Debugging mode.
+5. Connect your Android mobile phone via USB cable to your Laptop/Desktop.
+6. Click on the 'Run' button(Green Triangle Button) in your Android Studio window after detecting your mobile name.
+7. Wait until the application is installed on your android mobile phone.
+8. Once the application has been installed, feel free to use the 'Milo' app on your phone!
 
 
 # Running the Backend
