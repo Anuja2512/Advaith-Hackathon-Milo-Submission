@@ -1,5 +1,10 @@
-# Advaith-Hackathon-Milo-Submission
-## Milo Project for Advaith Hackathon
+<p align="center">
+<b>Milo Project for Advaith Hackathon</b>
+</p>
+
+<p align="center">
+  <img src="./logo.png" width="70" />
+</p>
 
 Milo is a social network with feature-sets for posts, scheduling events, broadcasting promotions - all location-based, so you only get what truly matters. There is something for everyone! We aim to solve the problem of social reach for the users where they have the control. In-line with the agenda, Milo offers a lot with endless applications!
 
@@ -36,3 +41,4 @@ Milo is a social network with feature-sets for posts, scheduling events, broadca
 1. Install Node.js if you haven't already.
 2. Inside the directory, run <code>npm i</code> and then <code>npm start</code>.
 3. React project shall load on <code>localhost:3000</code>.
+
