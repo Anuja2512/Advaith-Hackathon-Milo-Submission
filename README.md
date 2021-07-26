@@ -42,3 +42,4 @@ Milo is a social network with feature-sets for posts, scheduling events, broadca
 2. Inside the directory, run <code>npm i</code> and then <code>npm start</code>.
 3. React project shall load on <code>localhost:3000</code>.
 
+Link: <a href="https://milo-social.netlify.app/">Here</a>
