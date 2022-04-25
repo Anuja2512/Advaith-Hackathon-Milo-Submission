@@ -113,7 +113,7 @@ public class MyBlurbsFragment extends Fragment {
                         OkHttpClient client = new OkHttpClient();
                         //Toast.makeText(activity, latitudee + longitude, Toast.LENGTH_SHORT).show();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/userpromotions/"+username)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/userpromotions/"+username)
                                 .addHeader("Authorization", token)
                                 .get()
                                 .build();
@@ -165,7 +165,7 @@ public class MyBlurbsFragment extends Fragment {
                                                     //Toast.makeText(getActivity(), eachpostobj.toString(), Toast.LENGTH_SHORT).show();
                                                     imageLink = eachpostobj.getString("imageLink");
                                                     // String allhashtags = hashtags.toString().substring(1, hashtags.size()-1);
-                                                    key = eachpostobj.getString("key");
+                                                    key = eachpostobj.getString("_id");
                                                     radius = eachpostobj.getString("radius");
                                                     //deadlineTimeEpoch = eachpostobj.getString("deadlineTimeEpoch");
                                                     jsonObject = eachpostobj.getJSONObject("user");
@@ -258,7 +258,7 @@ public class MyBlurbsFragment extends Fragment {
                         .addFormDataPart("file", "jpg", RequestBody.create(MediaType.parse("multipart/form-data"), imageFile))
                         .build();
                 Request request = new Request.Builder()
-                        .url("https://milo-backend.deta.dev/api/uploadimage")
+                        .url("https://asia-south1-milo-node.cloudfunctions.net/api/uploadimage")
                         .addHeader("Authorization", token)
                         .post(body)
                         .build();

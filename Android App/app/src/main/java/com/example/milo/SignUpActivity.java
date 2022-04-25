@@ -29,7 +29,7 @@ public class SignUpActivity extends AppCompatActivity {
     TextView gotoLogin;
     RequestQueue requestQueue;
     ImageView profilepic;
-    private static String URL_REGIST = "https://milo-backend.deta.dev/api/signup";
+    private static String URL_REGIST = "https://asia-south1-milo-node.cloudfunctions.net/api/signup";
     EditText fname,lname,username,email,headline,aboutMe,locality,password,cpassword;
 
     @Override

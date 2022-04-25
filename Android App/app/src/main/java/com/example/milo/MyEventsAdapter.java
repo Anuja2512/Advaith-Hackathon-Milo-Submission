@@ -115,7 +115,7 @@ public class MyEventsAdapter extends RecyclerView.Adapter<MyEventsAdapter.MyView
 
                         OkHttpClient client = new OkHttpClient();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/event/"+ modelEvent.key)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/event/"+ modelEvent.key)
                                 .addHeader("Authorization", modelEvent.token)
                                 .delete()
                                 .build();
@@ -177,7 +177,7 @@ public class MyEventsAdapter extends RecyclerView.Adapter<MyEventsAdapter.MyView
                         // put your json here
                         RequestBody body = RequestBody.create(JSON, postData.toString());
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/updateevent/"+ modelEvent.key)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/updateevent/"+ modelEvent.key)
                                 .addHeader("Authorization", modelEvent.token)
                                 .put(body)
                                 .build();

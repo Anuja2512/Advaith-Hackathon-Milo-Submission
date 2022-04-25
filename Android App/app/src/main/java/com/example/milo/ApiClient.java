@@ -12,7 +12,7 @@ public class ApiClient {
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
         Retrofit retrofit = new Retrofit.Builder()
-                .baseUrl("https://milo-backend.deta.dev/api/login")
+                .baseUrl("https://asia-south1-milo-node.cloudfunctions.net/api/login")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(client)
                 .build();

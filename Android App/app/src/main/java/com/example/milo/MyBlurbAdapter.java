@@ -113,7 +113,7 @@ public class MyBlurbAdapter extends RecyclerView.Adapter<MyBlurbAdapter.MyViewHo
 
                         OkHttpClient client = new OkHttpClient();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/promotion/"+ modelBlurb.key)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/promotion/"+ modelBlurb.key)
                                 .addHeader("Authorization", modelBlurb.token)
                                 .delete()
                                 .build();
@@ -175,7 +175,7 @@ public class MyBlurbAdapter extends RecyclerView.Adapter<MyBlurbAdapter.MyViewHo
                         // put your json here
                         RequestBody body = RequestBody.create(JSON, postData.toString());
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/updatepromotion/"+ modelBlurb.key)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/updatepromotion/"+ modelBlurb.key)
                                 .addHeader("Authorization", modelBlurb.token)
                                 .put(body)
                                 .build();

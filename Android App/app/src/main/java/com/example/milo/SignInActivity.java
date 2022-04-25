@@ -74,7 +74,7 @@ public class SignInActivity extends AppCompatActivity {
                 else
                 {
 
-                    final String url = "https://milo-backend.deta.dev/api/login";
+                    final String url = "https://asia-south1-milo-node.cloudfunctions.net/api/login";
                     String email= emailtext.getText().toString();
                     String pass = passtext.getText().toString();
 

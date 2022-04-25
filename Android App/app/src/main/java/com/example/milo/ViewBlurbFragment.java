@@ -73,7 +73,7 @@ public class ViewBlurbFragment extends Fragment {
         frame = getArguments().getString("fromwhichfragment");
         String profilepic = getArguments().getString("profilepic");
         token = getArguments().getString("token");
-        key = getArguments().getString("key");
+        key = getArguments().getString("_id");
         usernametext=view.findViewById(R.id.post_que_user_name);
         loadingBar = new ProgressDialog(activity);
         loadingBar.setTitle("Please Wait");
@@ -194,7 +194,7 @@ public class ViewBlurbFragment extends Fragment {
                         // put your json here
                         RequestBody body = RequestBody.create(JSON, postData.toString());
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/ratings")
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/ratings")
                                 .addHeader("Authorization", token)
                                 .post(body)
                                 .build();
@@ -264,9 +264,9 @@ public class ViewBlurbFragment extends Fragment {
                         //Toast.makeText(activity, latitudee + longitude, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(activity, username, Toast.LENGTH_SHORT).show();
                         // Toast.makeText(activity, token, Toast.LENGTH_SHORT).show();
-                        //Toast.makeText(activity, "https://milo-backend.deta.dev/api/feed/" + username + "/" + latitudee + "/" + longitude, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(activity, "https://asia-south1-milo-node.cloudfunctions.net/api/feed/" + username + "/" + latitudee + "/" + longitude, Toast.LENGTH_SHORT).show();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/promotion/"+key+"/"+latitudee+"/"+longitude)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/promotion/"+key+"/"+latitudee+"/"+longitude)
                                 .addHeader("Authorization", token)
                                 .get()
                                 .build();

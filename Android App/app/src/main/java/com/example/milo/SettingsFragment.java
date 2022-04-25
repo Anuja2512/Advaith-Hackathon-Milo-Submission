@@ -84,7 +84,7 @@ public class SettingsFragment extends Fragment {
 
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-                .url("https://milo-backend.deta.dev/api/profile/"+username)
+                .url("https://asia-south1-milo-node.cloudfunctions.net/api/profile/"+username)
                 .get()
                 .addHeader("Authorization", token)
                 .build();
@@ -206,7 +206,7 @@ public class SettingsFragment extends Fragment {
                     } catch (JSONException e) {
                         e.printStackTrace();
                     }
-                    String url = "https://milo-backend.deta.dev/api/profile/"+usernametext.getText().toString();
+                    String url = "https://asia-south1-milo-node.cloudfunctions.net/api/profile/"+usernametext.getText().toString();
                     com.android.volley.toolbox.JsonObjectRequest jsonObjectRequest = new com.android.volley.toolbox.JsonObjectRequest(com.android.volley.Request.Method.PUT, url, postData, new com.android.volley.Response.Listener<JSONObject>() {
                         @Override
                         public void onResponse(JSONObject response) {
@@ -251,7 +251,7 @@ public class SettingsFragment extends Fragment {
         // Inflate the layout for this fragment
         return view;
     }
-    public static final String UPLOAD_URL = "https://milo-backend.deta.dev/api/uploadimage";
+    public static final String UPLOAD_URL = "https://asia-south1-milo-node.cloudfunctions.net/api/uploadimage";
     private void startGallery() {
         Intent cameraIntent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
 
@@ -296,7 +296,7 @@ public class SettingsFragment extends Fragment {
                         .addFormDataPart("file", "jpg", RequestBody.create(MediaType.parse("multipart/form-data"), imageFile))
                         .build();
                 Request request=new Request.Builder()
-                        .url("https://milo-backend.deta.dev/api/uploadimage")
+                        .url("https://asia-south1-milo-node.cloudfunctions.net/api/uploadimage")
                         .addHeader("Authorization", token)
                         .post(body)
                         .build();

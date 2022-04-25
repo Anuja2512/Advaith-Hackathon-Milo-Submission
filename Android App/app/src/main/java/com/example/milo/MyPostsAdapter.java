@@ -126,7 +126,7 @@ public class MyPostsAdapter  extends RecyclerView.Adapter<MyPostsAdapter.MyViewH
 
                         OkHttpClient client = new OkHttpClient();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/post/"+ modelFeed.key)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/post/"+ modelFeed.key)
                                 .addHeader("Authorization", modelFeed.token)
                                 .delete()
                                 .build();
@@ -192,7 +192,7 @@ public class MyPostsAdapter  extends RecyclerView.Adapter<MyPostsAdapter.MyViewH
                         // put your json here
                         RequestBody body = RequestBody.create(JSON, postData.toString());
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/updatepost/"+ modelFeed.key)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/updatepost/"+ modelFeed.key)
                                 .addHeader("Authorization", modelFeed.token)
                                 .put(body)
                                 .build();

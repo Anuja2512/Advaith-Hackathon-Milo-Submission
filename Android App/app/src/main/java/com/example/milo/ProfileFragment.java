@@ -150,7 +150,7 @@ public class ProfileFragment extends Fragment {
                         OkHttpClient client = new OkHttpClient();
                         //Toast.makeText(activity, latitudee + longitude, Toast.LENGTH_SHORT).show();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/profile/"+username)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/profile/"+username)
                                 .addHeader("Authorization", token)
                                 .get()
                                 .build();

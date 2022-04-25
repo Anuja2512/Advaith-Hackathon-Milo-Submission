@@ -180,7 +180,7 @@ public class PromotionFragment extends Fragment {
                         // put your json here
                         RequestBody body = RequestBody.create(JSON, postData.toString());
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/promotions")
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/promotions")
                                 .addHeader("Authorization", token)
                                 .post(body)
                                 .build();
@@ -196,7 +196,7 @@ public class PromotionFragment extends Fragment {
                                             try {
                                                 JSONObject object = new JSONObject(resStr);
                                                // Toast.makeText(activity, resStr, Toast.LENGTH_SHORT).show();
-                                                String key = object.getString("key");
+                                                String key = object.getString("_id");
                                                 if(key.equals(""))
                                                 {
                                                     Toast.makeText(activity, "Error Occurred!", Toast.LENGTH_SHORT).show();
@@ -262,7 +262,7 @@ public class PromotionFragment extends Fragment {
                         OkHttpClient client = new OkHttpClient();
                         //Toast.makeText(activity, latitudee + longitude, Toast.LENGTH_SHORT).show();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/promotionfeed/" + username + "/" + latitudee + "/" + longitude)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/promotionfeed/" + username + "/" + latitudee + "/" + longitude)
                                 .addHeader("Authorization", token)
                                 .get()
                                 .build();
@@ -314,7 +314,7 @@ public class PromotionFragment extends Fragment {
                                                     //Toast.makeText(getActivity(), eachpostobj.toString(), Toast.LENGTH_SHORT).show();
                                                     imageLink = eachpostobj.getString("imageLink");
                                                     // String allhashtags = hashtags.toString().substring(1, hashtags.size()-1);
-                                                    key = eachpostobj.getString("key");
+                                                    key = eachpostobj.getString("_id");
                                                     radius = eachpostobj.getString("radius");
                                                     //deadlineTimeEpoch = eachpostobj.getString("deadlineTimeEpoch");
                                                     jsonObject = eachpostobj.getJSONObject("user");
@@ -407,7 +407,7 @@ public class PromotionFragment extends Fragment {
                         .addFormDataPart("file", "jpg", RequestBody.create(MediaType.parse("multipart/form-data"), imageFile))
                         .build();
                 Request request = new Request.Builder()
-                        .url("https://milo-backend.deta.dev/api/uploadimage")
+                        .url("https://asia-south1-milo-node.cloudfunctions.net/api/uploadimage")
                         .addHeader("Authorization", token)
                         .post(body)
                         .build();

@@ -69,7 +69,7 @@ public class HashtagsFragment extends Fragment {
 
         OkHttpClient client = new OkHttpClient();
         Request request = new Request.Builder()
-              .url("https://milo-backend.deta.dev/api/hashtag/"+username)
+              .url("https://asia-south1-milo-node.cloudfunctions.net/api/hashtag/"+username)
                .get()
               .addHeader("Authorization", token)
                .build();
@@ -134,7 +134,7 @@ public class HashtagsFragment extends Fragment {
                     // put your json here
                     RequestBody body = RequestBody.create(JSON, jsonObject.toString());
                     Request request = new Request.Builder()
-                            .url("https://milo-backend.deta.dev/api/hashtag/"+username)
+                            .url("https://asia-south1-milo-node.cloudfunctions.net/api/hashtag/"+username)
                             .addHeader("Authorization", token)
                             .put(body)
                             .build();
@@ -193,7 +193,7 @@ public class HashtagsFragment extends Fragment {
                         longitude = longit.toString();
                         OkHttpClient client1 = new OkHttpClient();
                         Request request1 = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/hashfeed/"+username+"/"+latitudee+"/"+longitude)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/hashfeed/"+username+"/"+latitudee+"/"+longitude)
                                 .get()
                                 .addHeader("Authorization", token)
                                 .build();
@@ -255,7 +255,7 @@ public class HashtagsFragment extends Fragment {
                                                             hashtags.add(hashtag);
                                                         }
                                                         // String allhashtags = hashtags.toString().substring(1, hashtags.size()-1);
-                                                        key = eachpostobj.getString("key");
+                                                        key = eachpostobj.getString("_id");
                                                         radius = eachpostobj.getString("radius");
                                                         timeEpoch = eachpostobj.getString("timeEpoch");
                                                         jsonObject = eachpostobj.getJSONObject("user");

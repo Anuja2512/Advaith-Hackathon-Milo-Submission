@@ -196,7 +196,7 @@ public class HomeFragment extends Fragment implements LocationListener {
                         // put your json here
                         RequestBody body = RequestBody.create(JSON, postData.toString());
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/posts")
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/posts")
                                 .addHeader("Authorization", token)
                                 .post(body)
                                 .build();
@@ -211,7 +211,7 @@ public class HomeFragment extends Fragment implements LocationListener {
                                         public void run() {
                                             try {
                                                 JSONObject object = new JSONObject(resStr);
-                                                String key = object.getString("key");
+                                                String key = object.getString("_id");
                                                 if (key.equals(null)) {
                                                     Toast.makeText(getActivity(), "Could not post, Please try again!", Toast.LENGTH_SHORT).show();
                                                 } else {
@@ -291,7 +291,7 @@ public class HomeFragment extends Fragment implements LocationListener {
                         .addFormDataPart("file", "jpg", RequestBody.create(MediaType.parse("multipart/form-data"), imageFile))
                         .build();
                 Request request = new Request.Builder()
-                        .url("https://milo-backend.deta.dev/api/uploadimage")
+                        .url("https://asia-south1-milo-node.cloudfunctions.net/api/uploadimage")
                         .addHeader("Authorization", token)
                         .post(body)
                         .build();
@@ -412,9 +412,9 @@ public class HomeFragment extends Fragment implements LocationListener {
                         //Toast.makeText(activity, latitudee + longitude, Toast.LENGTH_SHORT).show();
                         //Toast.makeText(activity, username, Toast.LENGTH_SHORT).show();
                        // Toast.makeText(activity, token, Toast.LENGTH_SHORT).show();
-                        //Toast.makeText(activity, "https://milo-backend.deta.dev/api/feed/" + username + "/" + latitudee + "/" + longitude, Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(activity, "https://asia-south1-milo-node.cloudfunctions.net/api/feed/" + username + "/" + latitudee + "/" + longitude, Toast.LENGTH_SHORT).show();
                         Request request = new Request.Builder()
-                                .url("https://milo-backend.deta.dev/api/feed/"+ username+"/"+latitudee+"/"+longitude)
+                                .url("https://asia-south1-milo-node.cloudfunctions.net/api/feed/"+ username+"/"+latitudee+"/"+longitude)
                                 .addHeader("Authorization", token)
                                 .get()
                                 .build();
@@ -471,7 +471,7 @@ public class HomeFragment extends Fragment implements LocationListener {
                                                         hashtags.add(hashtag);
                                                     }
                                                    // String allhashtags = hashtags.toString().substring(1, hashtags.size()-1);
-                                                    key = eachpostobj.getString("key");
+                                                   // key = eachpostobj.getString("_id");
                                                     radius = eachpostobj.getString("radius");
                                                     timeEpoch = eachpostobj.getString("timeEpoch");
                                                     jsonObject = eachpostobj.getJSONObject("user");
@@ -520,7 +520,7 @@ public class HomeFragment extends Fragment implements LocationListener {
     }
     public void postrequest()
     {
-        String urll = "https://milo-backend.deta.dev/api/posts";
+        String urll = "https://asia-south1-milo-node.cloudfunctions.net/api/posts";
 
         jsonObjectRequest = new JsonObjectRequest(com.android.volley.Request.Method.POST, urll, postData, new com.android.volley.Response.Listener<JSONObject>() {
             @Override
@@ -528,7 +528,7 @@ public class HomeFragment extends Fragment implements LocationListener {
                 JSONObject jsonObject = response;
                 String key = "";
                 try {
-                    key = jsonObject.getString("key");
+                    key = jsonObject.getString("_id");
                     if (key.equals("")) {
                         Toast.makeText(getActivity(), "Error Posting!", Toast.LENGTH_SHORT).show();
                         loadingBar.dismiss();
